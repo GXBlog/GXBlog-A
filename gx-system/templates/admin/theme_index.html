@@ -1,0 +1,48 @@
+<div id="theme_index">
+<h2>主题</h2></br>
+<div class="message" style="display:{$message_show}">
+{$message_show_content}
+</div>
+
+<form action="{$home_path}gx-admin/" method="get" id="posts_form">
+<div id="actions">
+<select id="do_select">
+<option value="" selected>选择主题</option>
+{foreach=$dir}
+<option value="{$dir}">{$dir}</option>
+{/foreach}
+</select>
+<input id="submit" class="submit" value="应用" type="submit">
+</div>
+
+  <input id="action" name="action" value="theme" type="hidden">  
+  <input id="type" name="type" value="post" type="hidden"> 
+  <input id="do" name="do" value="update" type="hidden">
+  <input id="do_array" name="do_array" value="" type="hidden">
+
+</form>
+<script>
+/**
+  *表单的参数操作
+  */
+ function do_form(){
+	
+ 	var oSubmit = document.getElementById('submit');
+
+	oSubmit.onclick =  function(){
+		var oDoArray = document.getElementById('do_array');
+		var oDoSelect = document.getElementById('do_select');
+		var aOption = oDoSelect.getElementsByTagName('option');
+		
+		for(var i=0;i<aOption.length;i++){
+			if(aOption[i].selected == true){
+				oDoArray.value = aOption[i].value;
+			}
+		}
+		
+	}
+	
+ }
+ do_form();
+</script>
+</div>

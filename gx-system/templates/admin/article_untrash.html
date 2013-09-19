@@ -1,0 +1,240 @@
+<div id="manager_article">
+<h2>文章</h2>
+<div id="action_links"> 
+<ul>
+<li><a href="{$home_path}gx-admin/?action=article&type=manager">全部（{$all_article_nums}）</a></li>
+<li><a  class="light" href="{$home_path}gx-admin/?action=article&type=untrash">已发布（{$untrash_article_nums}）</a></li>
+<li><a href="{$home_path}gx-admin/?action=article&type=trash">回收站（{$trash_article_nums}）</a></li>
+</ul>
+</div>
+<form action="{$home_path}gx-admin/" method="get" id="posts_form">
+<div id="actions">
+<select id="do_select">
+<option value="" selected>批量操作</option>
+<option value="trash">移至回收站</option>
+<option value="delete">永久删除</option>
+</select>
+<input id="submit" class="submit" value="应用" type="submit">
+</div>
+<div id="pages">
+第<select id="page_select">
+{section=$pages}
+<option value="{$pages[page]}" {$pages[selected]}>{$pages[page]}</option>
+{/section}
+</select>页, 共{$page_nums}页
+</div>
+<table id="posts_table">
+	<tr class="head">
+    <td class="checkbox"><input id="all_checkbox" type="checkbox"></td>
+    <td class="title">标题</td>
+    <td class="author">作者</td>
+    <td class="category">分类目录</td>
+    <td class="tags">标签</td>
+    <td class="comments">评论</td>
+    <td class="date">日期</td>
+  </tr>  
+  
+  {section=$articles}
+  <tr>
+    <td><input type="checkbox"></td>
+    <td>{$articles[title]}
+	<div id="row_actions" class="row_actions">
+	<a href="{$home_path}gx-admin/?action=article&type=edit&do=show&do_array={$articles[id]}">编辑</a>
+	</div>
+	</td>
+    <td>{$articles[name]}</td>
+    <td></td>
+	<td>
+	{foreach=$articles[tags]}
+   		{$articles[tags]}&nbsp;
+	{/foreach}
+	</td>
+    <td>{$articles[comment]}</td>
+    <td>{$articles[time]}</td>
+	<td><input disabled="false" name="article_id" value="{$articles[id]}" type="hidden"></td>
+  </tr>
+ {/section}
+ 
+  <input id="action" name="action" value="article" type="hidden">  
+  <input id="type" name="type" value="untrash" type="hidden"> 
+  <input id="page" name="page" value="" type="hidden">
+  <input id="do" name="do" value="" type="hidden">
+  <input id="do_array" name="do_array" value="" type="hidden">
+
+</table>
+</form>
+<script>
+/**
+ * 操作文章表单的实现
+ */
+ function all_checkbox(){
+ 	var _this 						= this;
+	var oCB 						= document.getElementById('all_checkbox');
+	
+	oCB.onclick = function(){
+		var aCB = new Array();
+		aCB = _this.getAllCheckBox();
+		if(oCB.checked){//全部选中
+			for(var i=0;i<aCB.length;i++){
+				aCB[i].checked =  true;
+			}
+		}else{//全部空选
+			for(var i=0;i<aCB.length;i++){
+				aCB[i].checked =  false;
+			}
+		}
+	}
+	
+	/**
+	 * 返回所有checkBox
+	 */
+	_this.getAllCheckBox = function(){
+		var oForm = document.getElementById('posts_form');
+		var aInput = oForm.getElementsByTagName('input');
+		var aCB = new Array();
+		for(var i=0;i<aInput.length;i++){
+			if(aInput[i].type == 'checkbox' && aInput[i].id != 'all_checkbox'){
+				aCB[aCB.length] = aInput[i];
+			}
+		}
+		return aCB;
+	}
+	
+	var aCB = getAllCheckBox();
+	for(var i=0;i<aCB.length;i++){
+		aCB[i].onclick = function(){
+			var aCB = new Array();
+			aCB = _this.getAllCheckBox();
+			if(this.checked){
+				var is_true = true;
+				for(var j = 0;j<aCB.length;j++){
+					if(!aCB[j].checked){
+						is_true = false;
+					}
+				}
+				if(is_true){
+					oCB.checked = true;
+				}
+			}else{
+				oCB.checked = false;
+			}
+		}
+	}
+
+ }
+ 
+ 
+ /**
+  *表单的参数操作
+  */
+ function do_form(){
+ 	var _this = this;
+	_this.getCurrentPage = null;
+	
+ 	var oSubmit = document.getElementById('submit');
+
+	oSubmit.onclick =  function(){
+	 	var oForm = document.getElementById('posts_form');
+		var oPage = document.getElementById('page');
+		var oDo = document.getElementById('do');
+		var oDoArray = document.getElementById('do_array');
+		var oDoSelect = document.getElementById('do_select');
+		var aOption = oDoSelect.getElementsByTagName('option');
+		
+		for(var i=0;i<aOption.length;i++){
+			if(aOption[i].selected == true){
+				oDo.value = aOption[i].value;
+			}
+		}
+		
+		var aInput = oForm.getElementsByTagName('input');
+		var aArticleId = new Array();
+		var aCheckBox = new Array();
+	
+		for(var i=0;i<aInput.length;i++){
+			if(aInput[i].type == 'checkbox' && aInput[i].id != 'all_checkbox'){
+				aCheckBox[aCheckBox.length] = aInput[i];
+			}
+			
+			if(aInput[i].name == 'article_id'){
+				aArticleId[aArticleId.length] = aInput[i];
+			}
+		}
+
+		for(var i=0;i<aArticleId.length;i++){
+			if(oDoArray.value != '' && aCheckBox[i].checked == true){
+				oDoArray.value = oDoArray.value + ',' + aArticleId[i].value;
+			}else if(oDoArray.value == '' &&  aCheckBox[i].checked == true){
+				oDoArray.value = aArticleId[i].value;
+			}
+		}
+		//改变page
+		oPage.value = _this.getCurrentPage();
+	}
+	
+	_this.getCurrentPage = function(){
+	 	var oSelect = document.getElementById('page_select');
+		var aOption = oSelect.getElementsByTagName('option');
+
+		var page = null;
+		
+		for(var i=0;i<aOption.length;i++){
+			if(aOption[i].selected == true){
+				page = aOption[i].value;
+				return page;
+			}
+		}
+	}
+ }
+ 
+ function do_page(){
+ 	oSelect = document.getElementById('page_select');
+	aOption = oSelect.getElementsByTagName('option');
+
+	oSelect.onchange = function(){
+		var page = null;
+		for(var i=0;i<aOption.length;i++){
+			if(aOption[i].selected == true){
+				page = aOption[i].value;
+				break;
+			}
+		}
+		window.location.href="{$home_path}gx-admin/?action=article&type=untrash&page="+page;
+	}
+	
+ }
+ 
+  function changeRowAction() {
+ 	var oTable = document.getElementById('posts_table');
+	var aTr	  = oTable.getElementsByTagName('tr');
+	
+	for(var i=1;i<aTr.length;i++){
+		aTr[i].onmouseover = function(){
+			var aDiv = this.getElementsByTagName('div');
+			for(var j=0;j<aDiv.length;j++){
+				if(aDiv[j].id == 'row_actions'){
+					aDiv[j].style.display = 'block';
+					break;
+				}
+			}
+		}
+		
+		aTr[i].onmouseout = function(){
+			var aDiv = this.getElementsByTagName('div');
+			for(var j=0;j<aDiv.length;j++){
+				if(aDiv[j].id == 'row_actions'){
+					aDiv[j].style.display = 'none';
+					break;
+				}
+			}
+		}
+	}
+	
+ }
+ 
+ changeRowAction();
+ do_page();
+ do_form();
+ all_checkbox();
+</script>
+</div>

@@ -1,0 +1,123 @@
+/**
+ * www.ihuxu.com. All rights reserved.
+ *
+ * 背景色：#F5F5F5
+ * 主前景色：#21759b
+ * 边框：#DDDDDD
+ */
+ 
+body,div,h1,h2,h3,p,input,button,textarea,form,ul,li,tr,td{ margin:0px; padding:0px;}
+li { list-style:none; float:left;}
+ul { float:left;}
+a { color:#21759b;}
+a:hover {color:#FF3300;}
+input,textarea { outline:none;}
+
+body{
+	font: 14px tahoma, Arial, Verdana, sans-serif;
+	line-height:20px;
+	color: #666666;
+	background-color:#ffffff;
+}
+
+#top{ position:fixed; top:0px; left:0px; width:100%; min-width:960px; height:30px; background-color:#464646; color:#CCCCCC; line-height:30px; font-size:12px; z-index:2;}
+#top ul { width:100%;}
+#top ul li{ width:auto; padding:0px 10px; text-align:center;}
+#top ul li.left{ float:left;}
+#top ul li.right{float:right;}
+#top ul a li{ color:#CCCCCC;}
+#top ul a:hover li{ color:#CCCCCC;}
+
+#admin_bar{ position:relative; float:left; width:150px; height:800px; background-color:#e4e4e4;}
+#admin_bar a{ display:block; width:126px; text-decoration:none; padding:5px 10px; color:#21759b; border:2px solid; border-top-color:#eeeeee; border-bottom-color: #eeeeee; background: #e4e4e4; font-size:12px; font-weight:bold;}
+#admin_bar a:hover{ color:#FF3300; }
+#admin_bar ul.admin_menu {}
+#admin_bar ul.admin_menu li{ position:relative;}
+#admin_bar ul.admin_secondary_menu{ position:absolute; left:148px; top:0px; display:block; z-index:1;}
+#admin_bar ul.admin_secondary_menu li{}
+#admin_bar ul.admin_secondary_menu a{display:block; width:0px; height:20px; overflow:hidden; text-decoration:none; padding:5px 10px; color:#21759b; border:2px solid; border-top-color:#eeeeee; border-bottom-color: #eeeeee; background: #e4e4e4; font-size:12px; font-weight:bold; opacity:0; filter:alpha(opacity:0); }
+#admin_bar ul.admin_secondary_menu a:hover{ color:#FF3300;}
+
+#admin_content{  height:auto; min-width:810px; margin-top:30px; margin-left:150px; background-color:#ffffff;}
+
+#createtext { min-width:600px; height:400px; padding-top:20px; margin:0px 60px auto 20px; background-color:-red; }
+#createtext .ipt { width:95%; height:30px; color:#333333; font-size:18px; padding:0 10px 0 10px; background:#FFFFFF; border-style:solid; border-width:1px; border-color:#CCCCCC; line-height:30px;border-radius:3px; margin-bottom:10px;   }
+#createtext .txtarea { width:95%; height:200px; padding:10px; margin-bottom:10px;border-radius:3px; border-style:solid; border-width:1px; border-color:#CCCCCC;line-height:20px;}
+#createtext .submit{ float:left; width:80px; height:30px; border-radius:3px; border:none; background-color:#21759b; color:#ffffff; cursor:pointer;} 
+#createtext .message { width:95%; height:25px; color:#333333; font-size:12px; padding:0 10px 0 10px; background:#ffffe0; border-style:solid; border-width:1px; border-color:#e6db55; line-height:25px;border-radius:3px; margin-bottom:10px;  }
+
+#manager_article{min-width:600px; height:780px;  padding-top:20px; margin:0px 60px auto 20px; background-color:-red; }
+#manager_article #action_links{ width:auto; height:30px; background-color:-red; margin-top:15px; line-height:30px;}
+#manager_article #action_links ul { }
+#manager_article #action_links ul li a { display:block; width:auto; padding:0px 5px;height:30px; background-color:-green; font-size:12px; text-align:left; text-decoration:none;}
+#manager_article #action_links ul li a.light { display:block; width:auto; padding:0px 5px;height:30px; background-color:-green; font-size:12px; font-weight:bold; color:#333333; text-align:left; text-decoration:none;}
+#manager_article #action_links ul li a:hover{ }
+#manager_article #posts_form{ width:100%; height:auto; background-color:-yellow;}
+#manager_article #actions{ position:relative; float:left; width:200px; height:25px; margin:10px auto 10px 0px; background-color:-red; line-height:30px; }
+#manager_article #actions select{ height:25px; position:absolute; padding:2px; outline:none; border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#manager_article #actions input.submit{ cursor:pointer; width:50px; height:25px; position:absolute; left:150px;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; line-height:25px; color:#666666; }
+#manager_article #pages { float:right; width:auto;margin-top:10px; height:25px; font-size:12px;  background-color:-red; line-height:25px; }
+#manager_article #pages  select{outline:none;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#manager_article #pages  select option.current {selected:selected;}
+#manager_article #posts_table{ float:left; width:100%; height:auto; background-color:-green; color:#21759b;  border-radius:3px;  border-style:solid; border-width:1px; border-color:#DDDDDD; border-spacing:0px;}
+#manager_article #posts_table td{ border-bottom:1px solid #DDDDDD; padding-left:10px; }
+#manager_article #posts_table tr{ height:50px; vertical-align:text-top; line-height:25px; cursor:pointer;}
+#manager_article #posts_table tr.head{ background-color:-red;  height:40px; vertical-align:middle;}
+#manager_article #posts_table td.checkbox{ width:5%;}
+#manager_article #posts_table td.title{ width:40%;}
+#manager_article #posts_table td.author{ width:10%;}
+#manager_article #posts_table td.category{width:10%;}
+#manager_article #posts_table td.tags{width:10%;}
+#manager_article #posts_table td.comments{width:10%;}
+#manager_article #posts_table td.date{width:15%;}
+#manager_article #posts_table tr div.row_actions{ height:20px; width:100px; background-color:-green; line-height:20px; color:#21759b; font-size:12px; display:none;}
+#manager_article #posts_table tr div.row_actions a{text-decoration:none;}
+
+#comment_index {min-width:600px; height:780px;  padding-top:20px; margin:0px 60px auto 20px; background-color:-red;}
+#comment_index #action_links{ width:auto; height:30px; background-color:-red; margin-top:15px; line-height:30px;}
+#comment_index #action_links ul { }
+#comment_index #action_links ul li a { display:block; width:auto; padding:0px 5px;height:30px; background-color:-green; font-size:12px; text-align:left; text-decoration:none;}
+#comment_index #action_links ul li a.light { display:block; width:auto; padding:0px 5px;height:30px; background-color:-green; font-size:12px; font-weight:bold; color:#333333; text-align:left; text-decoration:none;}
+#comment_index #action_links ul li a:hover{ }
+#comment_index #posts_form{ width:100%; height:auto; background-color:-yellow;}
+#comment_index #actions{ position:relative; float:left; width:200px; height:25px; margin:10px auto 10px 0px; background-color:-red; line-height:30px; }
+#comment_index #actions select{ height:25px; position:absolute; padding:2px; outline:none; border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#comment_index #actions input.submit{ cursor:pointer; width:50px; height:25px; position:absolute; left:150px;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; line-height:25px; color:#666666; }
+#comment_index #pages { float:right; width:auto;margin-top:10px; height:25px; font-size:12px;  background-color:-red; line-height:25px; }
+#comment_index #pages  select{outline:none;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#comment_index #pages  select option.current {selected:selected;}
+#comment_index #posts_table{ float:left; width:100%; height:auto; background-color:-green; color:#21759b;  border-radius:3px;  border-style:solid; border-width:1px; border-color:#DDDDDD; border-spacing:0px;}
+#comment_index #posts_table td{ border-bottom:1px solid #DDDDDD; padding-left:10px;}
+#comment_index #posts_table tr{height:100px; vertical-align:text-top; cursor:pointer;}
+#comment_index #posts_table tr.head{ background-color:-red;  height:40px; vertical-align:middle;}
+#comment_index #posts_table td.checkbox{ width:5%;}
+#comment_index #posts_table td.title{ width:95%;}
+#comment_index #posts_table tr div.row_actions{height:20px; width:100px; background-color:-green;color:#21759b; font-size:12px; display:none; }
+#comment_index #posts_table tr div.row_actions a{text-decoration:none;}
+#comment_index #posts_table tr div.comment_content{ width:auto; line-height:25px; height:75px;background-color:-red; color:#999999;font-size:12px; display:block; overflow:hidden;}
+#comment_index #posts_table tr div.comment_content span.name{ color:#21759b;}
+#comment_index #posts_table tr div.comment_content span.time{ color:#21759b; }
+#comment_index #posts_table tr div.comment_content span.qq{color:#21759b;}
+#comment_index #posts_table tr div.comment_content span.homepage{color:#21759b;}
+#comment_index #posts_table tr div.comment_content span.content{color:#333333;}
+
+#comment_edit {min-width:600px; height:780px;  padding-top:20px; margin:0px 60px auto 20px; background-color:-red;}
+#comment_edit div.message { width:95%; height:25px; color:#333333; font-size:12px; padding:0 10px 0 10px; background:#ffffe0; border-style:solid; border-width:1px; border-color:#e6db55; line-height:25px;border-radius:3px; margin-bottom:10px;  }
+#comment_edit input.ipt { width:94%; height:25px; color:#333333; font-size:12px; padding:0 10px 0 10px; background:#FFFFFF; border-style:solid; border-width:1px; border-color:#CCCCCC; line-height:25px;border-radius:3px; margin-bottom:10px;   }
+#comment_edit .txtarea { width:95%; height:200px; padding:10px; margin-bottom:10px;border-radius:3px; border-style:solid; border-width:1px; border-color:#CCCCCC;line-height:20px;}
+#comment_edit table{ width:100%; background-color:-red;font-size:12px;}
+#comment_edit table.comment_desc td.desc { width:120px; vertical-align:top;}
+#comment_edit table.comment_desc td { vertical-align:top;}
+#comment_edit .submit{ float:left; width:80px; height:30px; border-radius:3px; border:none; background-color:#21759b; color:#ffffff; cursor:pointer;} 
+
+#theme_index{min-width:600px; height:780px;  padding-top:20px; margin:0px 60px auto 20px; background-color:-red;}
+#theme_index div.message { width:98%; height:25px; color:#333333; font-size:12px; padding:0 10px 0 10px; background:#ffffe0; border-style:solid; border-width:1px; border-color:#e6db55; line-height:25px;border-radius:3px; margin-bottoms:10px;  }
+#theme_index #posts_form{ width:100%; height:auto; background-color:-yellow;}
+#theme_index #actions{ position:relative; float:left; width:200px; height:25px; margin:10px auto 10px 0px; background-color:-red; line-height:30px; }
+#theme_index #actions select{ height:25px; position:absolute; padding:2px; outline:none; border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#theme_index #actions input.submit{ cursor:pointer; width:50px; height:25px; position:absolute; left:150px;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; line-height:25px; color:#666666; }
+#theme_index #pages { float:right; width:auto;margin-top:10px; height:25px; font-size:12px;  background-color:-red; line-height:25px; }
+#theme_index #pages  select{outline:none;border-radius:3px; background-color:#ffffff;  border-style:solid; border-width:1px; border-color:#DDDDDD; }
+#theme_index #pages  select option.current {selected:selected;}
+
+#footer { clear:both; width:960px; height:30px; line-height:30px; margin:auto auto 0 auto; text-align:center; }

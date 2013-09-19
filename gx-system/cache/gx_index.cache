@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="胡旭博客">
+<meta name="description" content="胡旭博客"/>
+<title>胡旭博客 - 又一个GXBlog站点</title>
+<link  rel="stylesheet" type="text/css" href="http://localhost/gxblog/gx-content/themes/blueDiv/index.css"  />
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/siteConf.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/bufferMove.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/gcdMove.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/colorGrad.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/tagWall.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/index.js"></script>
+</head>
+<body>
+<div id="top">
+<div class="bar">
+
+<div class="left">
+<h1>胡旭博客<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;又一个GXBlog站点</span></h1>
+</div>
+
+<div class="right">
+<!-- Google 搜索 Start -->
+<form name="input" target="_blank" action="http://www.google.com.hk/search?" method="get">
+<input type="hidden" name="sitesearch" id="sitesearch" value="http://localhost/gxblog/" />
+<input type="text" name="as_q"  id="as_q" class="ipt" />
+<input type="submit" value="" class="btn" />
+</form>
+<!-- Google 搜索 Over -->
+</div>
+
+</div>
+</div>
+
+<!-- TagNav 导航栏 Start -->
+<div id="tagnav">
+<div id="tagnav_float" class="tagnav">
+<ul>
+<a href="./" target="_blank"><li onmouseover="lightNavItem(0)" onmouseout="recoverNavItem(0)">首页</li></a>
+<a href="http://gxblog.lofter.com" target="_blank"><li onmouseover="lightNavItem(1)" onmouseout="recoverNavItem(1)">GXBlog官博</li></a>
+</ul>
+</div>
+</div>
+<!-- TagNav 导航栏 Over -->
+
+<div id="center">
+
+<!-- iSay Start -->
+<div id="iSay">
+<div class="close"></div>
+<span>说些什么呗 ^.^</span>
+<div class="top">
+<textarea class="textarea" cols="34" rows="4"></textarea>
+</div>
+<div class="submit">就是你了</div>
+<div class="center">
+
+<div class="item">sdf&nbsp;</div>
+<div class="time">
+<div class="time_right">2013-09-18 20:55:14</div>
+</div>
+<div class="item">您好，这是一条友系统自动生成的iSay。登陆后，方可编辑或者删除它。</div>
+<div class="time">
+<div class="time_right">2013-03-06 00:00:00</div>
+</div>
+</div>
+</div>
+
+<!-- 页面加载效果 Start -->
+<script type="text/javascript">
+	changeiSay();
+</script>
+<!-- 页面加载效果 Over -->
+
+<!-- iSay Over -->
+
+<!-- Left Start -->
+<div class="left">
+
+<!-- 标签墙 Start -->
+<div class="item">标签墙</div>
+<div class="item_div" id="tagWall">
+<ul class="div">
+
+<a href="http://localhost/gxblog/?tag=demo" target="_blank"><li>demo</li></a>
+</ul>
+</div>
+<!-- 页面加载效果 Start -->
+<script type="text/javascript">
+	changeTagWall();
+</script>
+<!-- 页面加载效果 Over -->
+
+<!-- 标签墙 Over -->
+
+<div class="item">随机博文</div>
+<div class="item_div">
+<ul>
+
+<li><a href="http://localhost/gxblog/?p=1" target="_blank">欢迎使用GXBlog!</a></li></br>
+</ul>
+</div>
+
+
+
+<!-- 百度分享 Start -->
+<div class="item">分享</div>
+<div class="item_div">
+<!-- Baidu Button BEGIN -->
+<span><pre>-- 百度分享Script代码投放处--</pre></span>
+<!-- Baidu Button END -->
+</div>
+<!-- 百度分享 Over -->
+
+</div>
+<!-- Left Over -->
+
+<!-- Content Start -->
+<div id="main" class="main">
+<div class="article">
+
+<div id="content" class="content">
+<div class="title"><h2><a  onmouseover="changeTitleToLight(this,1)" onmouseout="changeTitleToDefault(this,1)" href="http://localhost/gxblog/?p=1" target="_blank">欢迎使用GXBlog!</a></h2></div>
+<div class="author">By: **</div>
+<div class="time">Posted On: 2013-03-06 00:00:00</div>
+<div class="article_content">欢迎使用 GXBlog。这是系统自动生成的演示文章。编辑或者删除它，然后开始您的博客！</div>
+<div class="tags">
+<ul><li class="tags_desc">Tags: </li>
+
+<li class="tags_content">demo</li>
+</ul>
+</div>
+<div class="desc">Desc:  **</div>
+</div>
+</div>
+</div>
+<!-- Content Over -->
+
+<!-- Side Start -->
+<div class="side"><!-- 腾讯关注 OVER -->
+
+<ul id="about_bar" class="about_bar">
+<li id="about_item" class="about_item">关于我</li>
+<li class="img_me">
+<img src="http://localhost/gxblog/gx-content/themes/blueDiv/images/me_1.jpg" width="270px;" height="371px" title="我是小雪 *.*" alt="我是小雪  *.*">
+</li>
+<li class="about_div">
+<div class="about_div_sub">
+姓名：**</br>
+学历：**</br>
+爱好：**</br>
+主页：**</br>
+心情：**
+</div>
+<div class="about_div_sub">
+网名：**</br>
+专业：**</br>
+现居：**</br>
+QQ：**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2252065614&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2252065614:51" alt="联系我 GenialX" title="联系我 GenialX"/></a> 
+</br>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+描述内容...</br>
+</li>
+</ul>
+
+<!-- 心情碎语 Start -->
+<div class="item">心情碎语</div>
+<div class="item_div">
+
+<ul class="moodSay">
+<li>您好，这是一条由系统自动生成的moodSay。登陆后，方可编辑或者删除它。</li>
+</ul>
+</div>
+<!-- 心情碎语 Over -->
+
+<!-- 留言评论 Start -->
+<div class="item">留言评论</div>
+<div class="item_div">
+
+<ul class="newArticleComments">
+<li class="name"> GenialX </li><li class="desc"> 在 </li>
+<li class="time"> 2013-03-06 00:00:00 </li><li class="desc"> 说 </li></br>
+<li class="content"><a href="http://localhost/gxblog/?p=1#comments-4" target="_blank" >您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。</a></li>
+</ul>
+
+<ul class="newArticleComments">
+<li class="name"> GenialX </li><li class="desc"> 在 </li>
+<li class="time"> 2013-03-06 00:00:00 </li><li class="desc"> 说 </li></br>
+<li class="content"><a href="http://localhost/gxblog/?p=1#comments-3" target="_blank" >您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。</a></li>
+</ul>
+
+<ul class="newArticleComments">
+<li class="name"> GenialX </li><li class="desc"> 在 </li>
+<li class="time"> 2013-03-06 00:00:00 </li><li class="desc"> 说 </li></br>
+<li class="content"><a href="http://localhost/gxblog/?p=1#comments-2" target="_blank" >您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。</a></li>
+</ul>
+
+</div>
+<!-- 留言评论 Over -->
+
+<div class="go_top" id="go_top" >
+<div class="gp_top_img" id="go_top_img" onclick="scrollMove()"></div>
+</div>
+</div>
+<!-- Side Over -->
+</div>
+
+<!-- Footer Start -->
+<div id="footer">
+<div class="link">
+
+<div class="link_div">
+<b>友情链接：</b><br><br>
+<a href="http://gxblog.lofter.com" target="_blank">GXBlog官方博客</a><br><br>
+<a href="http://www.ihuxu.com" target="_blank">胡旭个人博客</a><br><br>
+</div>
+
+
+</div>
+<div class="site_info">
+版权&nbsp; <a href="http://localhost/gxblog/" target="_blank"> &nbsp;胡旭博客</a>&nbsp; 备案号
+</div>
+</div>
+<!-- Footer Over -->
+
+<!-- 百度统计js Start -->
+<div id="baiduscript" style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1d4d6b5288d5ddd445a4b43a534065f8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- 百度统计JS Over -->
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+var HOME_PATH = "http://localhost/gxblog/";

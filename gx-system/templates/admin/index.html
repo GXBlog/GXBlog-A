@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="{$home_path}gx-system/templates/admin/index.css" type="text/css" />
+<script type="text/javascript" src="{$home_path}gx-system/templates/admin/buffermove.js"></script>
+<title>后台>胡旭个人博客</title>
+</head>
+
+<body>
+<div id="top">
+<ul>
+<a href="#"><li class="right">您好，胡旭</li></a>
+</ul>
+</div>
+
+<div id="admin_bar">
+<ul id="admin_menu" class="admin_menu">
+<li><a href="{$home_path}" target="_blank">首页</a></li>
+
+<li><a href="{$home_path}gx-admin/?action=article">文章</a>
+<ul class="admin_secondary_menu" >
+<li><a href="{$home_path}gx-admin/?action=article&type=write" target="_self">撰写文章</a></li>
+<li><a href="{$home_path}gx-admin/?action=article&type=manager" target="_self">管理文章</a></li>
+</ul>
+</li>
+
+<li><a href="{$home_path}gx-admin/?action=comment&type=manager">评论</a></li>
+
+<li><a href="{$home_path}gx-admin/?action=moodsay">说说</a></li>
+
+<li><a href="{$home_path}gx-admin/?action=theme&type=show">主题</a></li>
+
+</ul>
+<script>
+/**
+ * 二级导航
+ */
+var iTimer = null;
+function change_admin_bar(){
+	var oUl = document.getElementById('admin_menu');
+	var aLi = oUl.getElementsByTagName('li');
+	
+	for(var i=0;i<aLi.length;i++){
+		var oMenu = aLi[i].getElementsByTagName('ul')[0];
+		if(oMenu){
+			aLi[i].iTimer = null;
+			aLi[i].onmouseover = function(){
+				if(this.iTimer) clearInterval(this.iTimer);
+				var aLi = this.getElementsByTagName('a');
+				var length = aLi.length - 1;
+				var num = 1;
+				
+				this.iTimer = setInterval(function(){
+					if(num <= length){
+						bufferMove(aLi[num],{width:146,height:20,opacity:100});
+						num ++;
+					}else{
+						clearInterval(this.iTimer);
+					}
+				},50);
+							
+			}
+
+			aLi[i].onmouseout = function(){
+				if(this.iTimer) clearInterval(this.iTimer);
+				var aLi = this.getElementsByTagName('a');
+				var length = aLi.length - 1;
+				var num = length;
+				
+				this.iTimer = setInterval(function(){
+					if(num >= 1){
+						bufferMove(aLi[num],{width:0,height:0,opacity:0});
+						num --;
+					}else{
+						clearInterval(this.iTimer);
+					}
+				},50);
+				
+			}
+		}
+	}
+}
+change_admin_bar();
+</script>
+</div>
+
+<div id="admin_content">
+{require=$filename}
+$filename
+{/require}
+</div>
+<div id="footer">Powered By GXBlog</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/** css样式表**/
+/*
+ * @author GenialX
+ * @link http://www.ihuxu.com
+ */
+/** 样式重置 */
+body,div,h1,h2,h3,p,input,button,textarea ,form,ul,li{ margin:0px; padding:0px;}
+img{ border:none;}
+a{ text-decoration:none; color:#333333;}
+a:hover { text-decoration:none; color:#5294DC;}
+input { outline:none; border:none;}
+button { outline:none; border:none;}
+li { list-style:none; float:left;}
+ul { float:left;}
+
+body{background-color:#E1E1E1; background:url(images/htmlbg.png); font-family:Georgia, "Times New Roman", Times, serif; font-size:16px;}
+
+/* #top area */
+#top{ width:auto; height:100px; background-color:#5294DC;}
+#top .bar {width:1200px; height:100px; background:-#FFFFFF; margin: 0px auto; background-color:#5294DC;}
+#top .left{ float:left;width:1000px; height:100px; background-color:-#666666; background-color:#5294DC;}
+#top .left h1{ font-size:36px; color:#FFFFFF; line-height:100px;cursor:pointer;}
+#top .left span{ font-size:14px; color:#FFFFFF; line-height:100px;}
+#top .right{float:left; width:200px; height:100px; background-color:-#777777; background-color:#5294DC; padding-top:0px; margin-top:0px;}
+#top .right .ipt{ width:160px; height:30px; line-height:30px; font-size:14px; background:#FFFFFF; color:#333333; padding:0px; margin:0px; position:absolute;top:35px;}
+#top .right .btn{ width:35px; height:30px; position:relative; top:35px; left:160px; background:url(images/ico_ndashboard.png) no-repeat;cursor:pointer;}
+
+/* #tagnav area */
+#tagnav {width:1200px; height:38px; margin:20px auto; background-color:#5294DC;}
+.tagnav { width:1200px; height:38px; line-height:38px; margin:0px auto; background-color:#5294DC; padding:0 0px;}
+.tagnav_float{width:1200px; height:38px; line-height:38px; background-color:#5294DC; padding:0 0px; position:fixed; left:auto; right:auto; top:0px; z-index:1; opacity:0.7; filter:alpha(opacity:70);}
+#tagnav ul{ width:auto; height:38px; line-height:38px;}
+#tagnav li{width:auto; height:38px; line-height:38px; background-color:#5294DC; color:#FFFFFF; padding:0px 20px 0px 20px; font-weight:bold; opacity:1; cursor:pointer;}
+
+/* #center area */
+#center{ width:1200px; height:auto; background:-#FFFFFF; margin:0px auto;}
+
+
+
+#center .main{float:left; width:910px; height:auto; background:-#666666; margin-top:0px;  color:#333333;}
+#center .main .tag_desc_div{ width:910px; height:30px; line-height:30px; font-size:14px; color:#666666; border-bottom:1px dashed #bbb; margin-bottom:10px;}
+#center .main .article{ float:left; width:910px; height:auto; background-color:-blue; }
+#center .main .content{ float:left;width:910px; height:auto; background-color:-red;border-bottom:1px dotted gray; margin-bottom:30px;}
+#center .main .title{ float:left;width:910px; height:auto; background-color:-blue; cursor:pointer;margin-bottom:14px; color:#5294DC;}
+#center .main .title a{ color:#5294DC;}
+#center .main .title h2{ cursor:default; font-size:18px;}
+#center .main .author { float:left; width:150px; height:20px; background-color:-red; font-size:12px; line-height:20px;font-weight:normal;}
+#center .main .time {float:left;width:230px; height:20px; background-color:-red; font-size:12px; line-height:20px; font-weight:normal;}
+#center .main .article_content{ float:left; width:880px; height:auto; background-color:-#00FF00; font-size:12px; padding:10px;}
+#center .main .tags{ width:910px; height:auto; color:#FFFFFF; float:left; background-color:-#0033CC;}
+#center .main .tags .tags_desc{ width:auto; height:20px;padding:2px 6px 2px 0px; line-height:22px; background-color:-#5294DC; font-size:14px; font-weight:normal; color:#333333;}
+#center .main .tags .tags_content{width:auto; height:20px; padding:2px 6px; line-height:20px; background-color:#5294DC; margin:0px 5px; font-size:12px; font-weight:normal;}
+#center .main .tags a{ color:#FFFFFF;}
+#center .main .desc{ float:right;width:auto; height:30px; line-height:30px; padding:2px 0px 2px 0px; background-color:-#666666; font-size:12px; font-weight:normal;}
+
+/* side area */
+#center .side { position:relative; float:left; width:270px; height:1500px; padding:0px 0px 10px 20px; background:-#CCCCCC;}
+#center .side a{color:#666666; font-weight:normal;}
+#center .side a:hover{ font-weight:normal; color:#5294DC;}
+#center .side .about_bar { width:269px; height:auto; overflow:hidden; }
+#center .side .about_item { width:269px; height:30px; line-height:30px; color:#FFFFFF; font-size:14px; background:#5294DC;  text-align:center;cursor:pointer; font-weight:bold; margin-bottom:10px;}
+#center .side .about_div { width:253px; height:auto; line-height:30px; color:#333333; font-size:12px; background:-red;  text-align:left; cursor:pointer; padding:4px 8px; margin-top:10px;}
+#center .side .about_div_sub {width:126px; height:auto; line-height:30px; font-size:12px; float:left; background-color:-blue;}
+#center .side .img_me{ width:269px; height:auto; overflow:hidden; cursor:pointer;}
+#center .side .item{ float:left; width:270px; height:30px; font-size:14px; font-weight:bold; color:#FFFFFF; text-align:center; line-height:30px; background-color:#5294DC; margin:10px 0 5px 0;}
+#center .side .item_div { float:left; width:250px; height:auto; padding:5px 10px 10px 10px; background:background-color:blue; margin-bottom:10px 0 10px 0; font-size:12px; color:#333333;}
+#center .side .item_div .moodSay{ width:250px; height:auto; overflow:inherit;}
+#center .side .item_div .moodSay li{ width:250px; height:auto; background-color:-red; border-bottom:1px dashed #666; margin-bottom:10px; padding-bottom:2px;}
+#center .side .item_div .newArticleComments {width:250px; height:auto; overflow:inherit;border-bottom:1px dashed #666; margin-bottom:10px; padding-bottom:2px;}
+#center .side .item_div .newArticleComments .desc { color:#999999;}
+#center .side .item_div .newArticleComments .name{ color:#333333;}
+#center .side .item_div .newArticleComments .content{ color:#333333; padding-left:20px; padding-top:10px;}
+#center .side .item_div .newArticleComments .time{ color:#333333;}
+#center .side .item_div .newArticleComments a{ font-weight:normal; color:#333333;} 
+#center .side .item_div .newArticleComments a:hover{ font-weight:normal; color:#5294DC;} 
+#center .side .item_div ul.tags_div{ width:250px; height:auto; overflow:hidden;}
+#center .side .item_div ul.tags_div li{ width:auto; height:auto; background-color:#f16e50; margin:2px; padding:0 10px 0 10px; line-height:40px; color:white; text-align:center; cursor:pointer; }
+
+
+#go_top{ width:270px; height:100px; padding-top:53px; background-color:-red; position:fixed; bottom:0px; opacity:0; filter:alpha(opacity:0); display:none; z-index:1;}
+#go_top_img{ position:relative; left:220px; width:50px; height:50px; background:url(images/go_top.png) 0px 0px no-repeat; cursor:pointer;opacity:0.7; filter:alpha(opacity:70);}
+
+#footer{ width:auto; height:56px; background-color:#5294DC; clear:both;}
+#footer .bar {width:1184px; height:40px; background:#5294DC;; margin: 0px auto;  padding:8px; font-size:12px; color:#CCCCCC;}
+#footer .site_info{ width:1184px; height:40px; background-color:#5294DC;line-height:40px; text-align:center;}
+#footer a{ color:#CCCCCC;}
+#footer a:hover{ color:#CCCCCC;}
+#footer b{ font-size:14px;}

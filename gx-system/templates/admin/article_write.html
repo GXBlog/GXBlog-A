@@ -1,0 +1,88 @@
+<div id="createtext">
+<h2>撰写新文章</h2></br>
+<div class="message" style="display:{$message_show}">
+{$message_show_content}
+</div>
+    <form id="form_createtext" name="form_createtext" method="post" action="./">
+
+
+		<input type="text" class="ipt" id="title" name="title" />
+
+
+        <input type="text" class="ipt" id="tags" name="tags" />
+
+
+        <textarea name="content" id="content" class="txtarea"></textarea>
+
+	  <p>
+	  	  <input onmousedown="formConfirm()" type="submit" value="发布" id="submit"  class="submit" />
+	  </p>
+	  <input type="hidden" name="action" value="article">
+	  <input type="hidden" name="type" value="post">
+
+	</form>
+	
+<script>
+/**
+ * 表单验证
+ */
+function formConfirm(){
+	var oTitle = document.getElementById('title');
+	var oTags = document.getElementById('tags');
+	var oContent = document.getElementById('content');
+	
+	if(oTitle.value == "" || oTitle.value == '在此键入标题'){
+		alert("标题不能为空！");
+		return false;
+	}else if(oTags.value == "" || oTags.value == '多个标签请用英文逗号分开'){
+		alert("标签不能为空！");
+		return false;
+	}else if(oContent.value == ""){
+		alert("内容不能为空！");
+		return false;
+	}
+	return ;
+}
+function autoFill(){	
+	var oTitle = document.getElementById('title');
+	var oTags = document.getElementById('tags');
+	
+	oTitle.style.color = '#aaaaaa';
+	oTitle.value = '在此键入标题';
+	
+	oTitle.onblur = function(){
+		if(oTitle.value == ''){
+			oTitle.style.color = '#aaaaaa';
+			oTitle.value = '在此键入标题';
+		}
+	}
+	
+	oTitle.onfocus = function(){
+		if(oTitle.value == '在此键入标题'){
+			oTitle.style.color = '#333333';
+			oTitle.value = '';
+		}
+	}
+	
+	oTags.style.color = '#aaaaaa';
+	oTags.value = '多个标签请用英文逗号分开';
+	
+	oTags.onblur = function(){
+		if(oTags.value == ''){
+			oTags.style.color = '#aaaaaa';
+			oTags.value = '多个标签请用英文逗号分开';
+		}
+	}
+	
+	oTags.onfocus = function(){
+		if(oTags.value == '多个标签请用英文逗号分开'){
+			oTags.style.color = '#333333';
+			oTags.value = '';
+		}
+	}
+	
+}
+
+autoFill();
+</script>
+</div>

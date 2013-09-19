@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="{$site_path}gx-system/templates/admin/login.css" type="text/css" />
+<meta name="keywords"
+	content="胡旭个人博客 GenialX GXBlog">
+<meta name="description"
+	content="胡旭个人博客 || 一个自由大学生的博客">
+<title>登陆>胡旭个人博客</title>
+</head>
+
+<body> 
+
+
+<div id="center">
+<div id="login">
+
+<form id="form_login" name="form_login" method="post" action="./">
+<p>
+用户名
+</p>
+<input type="text" class="ipt" id="uname" name="uname">
+<p>
+密码
+</p>
+<input type="password" class="ipt" id="pwd" name="pwd">
+
+<p>
+<input type="submit" value="登录" class="submit">
+</p>
+<input type="hidden" name="action" id="action" value="login">
+</form>
+
+</div>
+
+<div class="login_error" style="display:{$error_show};">
+用户名或密码错误，请重新输入！
+</div>
+
+</div>
+
+</body>
+</html>

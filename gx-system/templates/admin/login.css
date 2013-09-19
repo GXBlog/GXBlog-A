@@ -1,0 +1,17 @@
+/**
+ *后台登陆主页面的样式表
+ */
+/** css样式表 **/
+
+/* 样式重置 */
+body,div,h1,input,button,textarea,form,table,tr,td,p{ margin:0px; padding:0px;}
+input { outline:none; border:none;}
+body { font-family:Georgia, "Times New Roman", Times, serif; font-size:16px; background-color:#F5F5F5; }
+
+/** #login area */
+#center { width:600px; height:480px; margin:0px auto; padding:10px;}
+#center #login { width:260px; height:165px; background:#ffffff; margin:145px auto; padding:30px 20px 20px 20px;border-style:solid; border-width:1px; border-color:#CCCCCC;border-radius:3px; margin-bottom:20px;}
+#center #login p{ font-size:14px; color:#666666; padding-bottom:2px;}
+#center #login .ipt { width:258px; height:30px; line-height:30px; background:#FFFFFF; border-style:solid; border-width:1px; border-color:#CCCCCC;border-radius:3px; margin-bottom:20px; }
+#center #login .submit { width:60px; height:30px;background:#21759b;float:right; cursor:pointer; color:#FFFFFF;line-height:30px; border-radius:3px;}
+#center .login_error { width:260px; height:20px; line-height:20px; color:red; margin:0 auto; font-size:12px; text-align:center; border:1px solid red; background-color:#FFEBE8; border-radius:4px;} 

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+
+body {
+	font: 14px tahoma, Arial, Verdana, sans-serif;
+	line-height:20px;
+	color: #666666;
+	background-color:#F5F5F5;
+}
+
+div.main{ 
+ width:700px;
+ height:400px;
+ margin:50px auto;
+ background-color:#FFFFFF;
+ border:1px solid #DDDDDD;
+ padding:20px;
+ text-align:left;
+}
+
+td.desc {
+ font-weight:bold;
+ width:150px;
+ height:50px;
+}
+input.submit {
+ width:80px;
+ height:30px;
+ background-color:#FFFFFF;
+ border:1px solid #DDDDDD;
+ line-height:30px;
+ text-align:center;
+ font-size:12px;
+ cursor:pointer;
+ padding:0px;
+}
+</style>
+<title>GXBlog>调整配置文件</title>
+</head>
+
+<body>
+<div class="main">
+<span>请在下方填写您的数据库连接信息。如果您不确定，请联系您的服务提供商。</span>
+<form method="get" action="./">
+<table>
+<tr>
+<td class="desc">数据库名</td>
+<td><input name="dbname" id="dbname" type="text" size="25" value="gxblog"></td>
+<td>将 GXBlog 安装在哪个数据库？（该项需手动创建）</td>
+</tr>
+<tr>
+<td class="desc">用户名</td>
+<td><input name="uname" id="uname" type="text" size="25" value=""></td>
+<td>您的 MySQL 用户名</td>
+</tr>
+<tr>
+<td class="desc">密码</td>
+<td><input name="pwd" id="pwd" type="text"  size="25" value=""></td>
+<td>...及密码</td>
+</tr>
+<tr>
+<td class="desc">数据库主机</td>
+<td><input name="dbhost" id="dbhost" type="text" size="25" value="localhost"></td>
+<td>如果填写 localhost 之后 GXBlog 不能正常工作的话，请向主机服务提供商索要数据库信息。</td>
+</tr>
+<tr>
+<td class="desc">表前缀</td>
+<td><input name="prefix" id="prefix" type="text" value="gx_" size="25"></td>
+<td>如果您希望在同一个数据库安装多个 GXBlog，请修改前缀。</td>
+</tr>
+
+
+<tr>
+<td class="desc">站点地址</td>
+<td><input type="text" name="site_link" id="site_link" size="25"></td>
+<td>比如: http://www.ihuxu.com/（注:后面的'/'字符不能省略）。</td>
+</tr>
+
+<tr>
+<td><p><input type="submit" name="submit" id="submit" class="submit"></p></td>
+<td><input type="hidden" name="step" id="step" value="2"></td>
+<td></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

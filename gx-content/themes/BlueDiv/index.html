@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"
+	content="{$web_name}">
+<meta name="description" content="{$web_name}"/>
+<title>{$title}</title>
+<link  rel="stylesheet" type="text/css" href="{$site_path}gx-content/themes/blueDiv/index.css"  />
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/siteConf.js"></script>
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/bufferMove.js"></script>
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/gcdMove.js"></script>
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/colorGrad.js"></script>
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/tagWall.js"></script>
+<script type="text/javascript" src="{$site_path}gx-content/themes/blueDiv/index.js"></script>
+</head>
+<body>
+<div id="top">
+<div class="bar">
+
+<div class="left">
+<h1>{$logo}<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$web_desc}</span></h1>
+</div>
+
+<div class="right">
+<!-- Google 搜索 Start -->
+<form name="input" target="_blank" action="http://www.google.com.hk/search?" method="get">
+<input type="hidden" name="sitesearch" id="sitesearch" value="{$site_search}" />
+<input type="text" name="as_q"  id="as_q" class="ipt" />
+<input type="submit" value="" class="btn" />
+</form>
+<!-- Google 搜索 Over -->
+</div>
+
+</div>
+</div>
+
+<!-- TagNav 导航栏 Start -->
+<div id="tagnav">
+<div id="tagnav_float" class="tagnav">
+<ul>
+<a href="./" target="_blank"><li onmouseover="lightNavItem(0)" onmouseout="recoverNavItem(0)">首页</li></a>
+<a href="http://gxblog.lofter.com" target="_blank"><li onmouseover="lightNavItem(1)" onmouseout="recoverNavItem(1)">GXBlog官博</li></a>
+</ul>
+</div>
+</div>
+<!-- TagNav 导航栏 Over -->
+
+<div id="center">
+
+<!-- iSay Start -->
+<div id="iSay">
+<div class="close"></div>
+<span>说些什么呗 ^.^</span>
+<div class="top">
+<textarea class="textarea" cols="34" rows="4"></textarea>
+</div>
+<div class="submit">就是你了</div>
+<div class="center">
+{section=$iSay}
+<div class="item">{$iSay[content]}</div>
+<div class="time">
+<div class="time_right">{$iSay[time]}</div>
+</div>
+{/section}
+</div>
+</div>
+
+<!-- 页面加载效果 Start -->
+<script type="text/javascript">
+	changeiSay();
+</script>
+<!-- 页面加载效果 Over -->
+
+<!-- iSay Over -->
+
+<!-- Left Start -->
+<div class="left">
+
+<!-- 标签墙 Start -->
+<div class="item">标签墙</div>
+<div class="item_div" id="tagWall">
+<ul class="div">
+{section=$articleTags}
+<a href="{$articleTags[link]}" target="_blank"><li>{$articleTags[tag]}</li></a>
+{/section}
+</ul>
+</div>
+<!-- 页面加载效果 Start -->
+<script type="text/javascript">
+	changeTagWall();
+</script>
+<!-- 页面加载效果 Over -->
+
+<!-- 标签墙 Over -->
+
+<div class="item">随机博文</div>
+<div class="item_div">
+<ul>
+{section=$rearticles}
+<li><a href="{$rearticles[link]}" target="_blank">{$rearticles[title]}</a></li></br>
+{/section}
+</ul>
+</div>
+
+
+
+<!-- 百度分享 Start -->
+<div class="item">分享</div>
+<div class="item_div">
+<!-- Baidu Button BEGIN -->
+<span><pre>-- 百度分享Script代码投放处--</pre></span>
+<!-- Baidu Button END -->
+</div>
+<!-- 百度分享 Over -->
+
+</div>
+<!-- Left Over -->
+
+<!-- Content Start -->
+<div id="main" class="main">
+<div class="article">
+{section=$articles}
+<div id="content" class="content">
+<div class="title"><h2><a  onmouseover="changeTitleToLight(this,{$articles[title_id]})" onmouseout="changeTitleToDefault(this,{$articles[title_id]})" href="{$articles[link]}" target="_blank">{$articles[title]}</a></h2></div>
+<div class="author">By: **</div>
+<div class="time">Posted On: {$articles[time]}</div>
+<div class="article_content">{$articles[content]}</div>
+<div class="tags">
+<ul><li class="tags_desc">Tags: </li>
+{foreach=$articles[tags]}
+<li class="tags_content">{$articles[tags]}</li>
+{/foreach}
+</ul>
+</div>
+<div class="desc">Desc:  **</div>
+</div>
+{/section}
+</div>
+</div>
+<!-- Content Over -->
+
+<!-- Side Start -->
+<div class="side"><!-- 腾讯关注 OVER -->
+
+<ul id="about_bar" class="about_bar">
+<li id="about_item" class="about_item">关于我</li>
+<li class="img_me">
+<img src="{$site_path}gx-content/themes/blueDiv/images/{$me_img}.jpg" width="270px;" height="371px" title="我是小雪 *.*" alt="我是小雪  *.*">
+</li>
+<li class="about_div">
+<div class="about_div_sub">
+姓名：**</br>
+学历：**</br>
+爱好：**</br>
+主页：**</br>
+心情：**
+</div>
+<div class="about_div_sub">
+网名：**</br>
+专业：**</br>
+现居：**</br>
+QQ：**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2252065614&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2252065614:51" alt="联系我 GenialX" title="联系我 GenialX"/></a> 
+</br>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+描述内容...</br>
+</li>
+</ul>
+
+<!-- 心情碎语 Start -->
+<div class="item">心情碎语</div>
+<div class="item_div">
+{section=$moodsay}
+<ul class="moodSay">
+<li>{$moodsay[content]}</li>
+</ul>
+{/section}
+</div>
+<!-- 心情碎语 Over -->
+
+<!-- 留言评论 Start -->
+<div class="item">留言评论</div>
+<div class="item_div">
+{section=$newArticleComments}
+<ul class="newArticleComments">
+<li class="name"> {$newArticleComments[name]} </li><li class="desc"> 在 </li>
+<li class="time"> {$newArticleComments[time]} </li><li class="desc"> 说 </li></br>
+<li class="content"><a href="{$newArticleComments[link]}" target="_blank" >{$newArticleComments[content]}</a></li>
+</ul>
+
+{/section}
+</div>
+<!-- 留言评论 Over -->
+
+<div class="go_top" id="go_top" >
+<div class="gp_top_img" id="go_top_img" onclick="scrollMove()"></div>
+</div>
+</div>
+<!-- Side Over -->
+</div>
+
+<!-- Footer Start -->
+<div id="footer">
+<div class="link">
+
+<div class="link_div">
+<b>友情链接：</b><br><br>
+<a href="http://gxblog.lofter.com" target="_blank">GXBlog官方博客</a><br><br>
+<a href="http://www.ihuxu.com" target="_blank">胡旭个人博客</a><br><br>
+</div>
+
+
+</div>
+<div class="site_info">
+{$web_copyright}&nbsp; <a href="{$site_path}" target="_blank"> &nbsp;{$web_name}</a>&nbsp; {$web_record}
+</div>
+</div>
+<!-- Footer Over -->
+
+<!-- 百度统计js Start -->
+<div id="baiduscript" style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1d4d6b5288d5ddd445a4b43a534065f8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- 百度统计JS Over -->
+
+</body>
+</html>

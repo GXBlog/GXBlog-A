@@ -1,0 +1,272 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="欢迎使用GXBlog! - demo">
+<meta name="description" content="欢迎使用GXBlog!"/>
+<title>欢迎使用GXBlog! - 胡旭博客</title>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/siteConf.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/colorGrad.js"></script>
+<script type="text/javascript"  src="http://localhost/gxblog/gx-content/themes/blueDiv/comment.js"></script>
+<script type="text/javascript" src="http://localhost/gxblog/gx-content/themes/blueDiv/archive.js"></script>
+<link  rel="stylesheet" type="text/css" href="http://localhost/gxblog/gx-content/themes/blueDiv/archive.css"  />
+<!--syntaxHighlighter
+
+syntaxHighlighter-->
+</head>
+<body>
+<div id="top">
+<div class="bar">
+
+<div class="left">
+<h1>欢迎使用GXBlog!<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;胡旭博客</span></h1>
+</div>
+
+<div class="right">
+<!-- Google 搜索 Start -->
+<form name="input" target="_blank" action="http://www.google.com.hk/search?" method="get">
+<input type="hidden" name="sitesearch" id="sitesearch" value="http://localhost/gxblog/" />
+<input type="text" name="as_q"  id="as_q" class="ipt" />
+<input type="submit" value="" class="btn" />
+</form>
+<!-- Google 搜索 Over -->
+</div>
+
+</div>
+</div>
+
+<!-- TagNav 导航栏 Start -->
+<div id="tagnav">
+<div id="tagnav_float" class="tagnav">
+<ul>
+<a href="http://localhost/gxblog/" target="_blank"><li>首页</li></a>
+<a href="http://gxblog.lofter.com" target="_blank"><li>GXBlog官博</li></a>
+</ul>
+</div>
+</div>
+<script type="text/javascript"> changeNav();</script>
+<!-- TagNav 导航栏 Over -->
+
+<div id="center">
+
+
+
+
+<!-- Content Start -->
+<div id="main" class="main">
+
+
+<div class="article">
+<div id="content" class="content">
+<div class="title"><h2><a href="http://localhost/gxblog/?p=1" target="_blank">欢迎使用GXBlog!</a></h2></div>
+<div class="author">By: **</div>
+<div class="time">Posted On: 2013-03-06 00:00:00</div>
+<div class="article_content">欢迎使用 GXBlog。这是系统自动生成的演示文章。编辑或者删除它，然后开始您的博客！</div>
+<div class="tags">
+<ul><li class="tags_desc">Tags: </li>
+
+<li class="tags_content">demo</li>
+</ul>
+</div>
+<div class="desc">Desc:  **</div>
+</div>
+</div>
+</div>
+<!-- Content Over -->
+
+<!-- Side Start -->
+<div class="side">
+
+<!-- 标签墙 Start -->
+<div class="item">标签墙</div>
+<div class="item_div" id="tagWall">
+<ul class="tags_div">
+
+<a href="http://localhost/gxblog/?tag=demo" target="_blank"><li>demo</li></a>
+</ul>
+</div>
+<!-- 页面加载效果 Start -->
+<script type="text/javascript">
+	changeTagWall();
+</script>
+<!-- 页面加载效果 Over -->
+
+<!-- 标签墙 Over -->
+
+<!-- 随机博文 Start -->
+<div class="item">随机博文</div>
+<div class="item_div">
+<ul>
+
+<li><a href="http://localhost/gxblog/?p=1" target="_blank">欢迎使用GXBlog!</a></li></br>
+</ul>
+</div>
+<!-- 随机博文 Over -->
+
+<!-- 心情碎语 Start -->
+<div class="item">心情碎语</div>
+<div class="item_div">
+
+<ul class="moodSay">
+<li>您好，这是一条由系统自动生成的moodSay。登陆后，方可编辑或者删除它。</li>
+</ul>
+</div>
+<!-- 心情碎语 Over -->
+
+
+
+<!-- 百度分享 Start -->
+<div class="item">分享</div>
+<div class="item_div">
+<!-- Baidu Button BEGIN -->
+<span>--百度Script代码投放处--</span>
+<!-- Baidu Button END -->
+</div>
+<!-- 百度分享 Over -->
+
+
+<div class="go_top" id="go_top" >
+<div class="gp_top_img" id="go_top_img" onclick="scrollMove()"></div>
+</div>
+</div>
+<!-- Side Over -->
+
+<div id="comment">
+<div id="comments">
+
+<!-- comments-list start -->
+
+<span id="comments-4"  class="commenter">GenialX</span><i>说: </i></br>
+<i class="commenter_desc">QQ: </i><span class="commenter_qq">2252065614</span>
+&nbsp;&nbsp;&nbsp;
+<i class="commenter_desc">Site: </i><span class="commenter_homepage">http://www.ihuxu.com</span>
+</br>
+<i class="commenter_desc">Time: </i><span class="commenter_time">2013-03-06 00:00:00</span>
+</br></br>
+<div class="comments_content">
+您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。
+</br>
+<div class="div_reply"><a href="#comment_sub" onclick="comment_reply()"; >回复</a></div>
+</br>
+</div>
+</br>
+<span id="comments-3"  class="commenter">GenialX</span><i>说: </i></br>
+<i class="commenter_desc">QQ: </i><span class="commenter_qq">2252065614</span>
+&nbsp;&nbsp;&nbsp;
+<i class="commenter_desc">Site: </i><span class="commenter_homepage">http://www.ihuxu.com</span>
+</br>
+<i class="commenter_desc">Time: </i><span class="commenter_time">2013-03-06 00:00:00</span>
+</br></br>
+<div class="comments_content">
+您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。
+</br>
+<div class="div_reply"><a href="#comment_sub" onclick="comment_reply()"; >回复</a></div>
+</br>
+</div>
+</br>
+<span id="comments-2"  class="commenter">GenialX</span><i>说: </i></br>
+<i class="commenter_desc">QQ: </i><span class="commenter_qq">2252065614</span>
+&nbsp;&nbsp;&nbsp;
+<i class="commenter_desc">Site: </i><span class="commenter_homepage">http://www.ihuxu.com</span>
+</br>
+<i class="commenter_desc">Time: </i><span class="commenter_time">2013-03-06 00:00:00</span>
+</br></br>
+<div class="comments_content">
+您好，这是一条有系统自动生成的评论。登陆后，方可编辑或者删除它。
+</br>
+<div class="div_reply"><a href="#comment_sub" onclick="comment_reply()"; >回复</a></div>
+</br>
+</div>
+</br>
+<!-- comments-list over -->
+</div>
+
+<div id="comment_sub">
+<table>
+<form id="comment_form" name="comment_form" action="#" method="post">
+ 
+<div class="desc_form"><b><strong>发表评论</strong></b>
+</br></br>
+<span>
+温馨提示：评论审核功能已经开启，站长会定时获准评论。
+</span>
+</div>
+
+<tr><td><div class="desc_field">名字:</div></td>
+<td><input type="text" name="name" id="name" class="comment_name"/></td>
+</tr>
+
+
+<tr><td><div class="desc_field">QQ:</div></td>
+<td><input type="text" name="qq" id="qq" class="comment_qq"/></td>
+</tr>
+
+<tr><td><div class="desc_field">主页:</div></td>
+<td><input type="text" name="homepage" id="homepage" class="comment_homepage"/></td>
+</tr>
+
+
+<tr>
+<td><div class="desc_field_content">内容:</div></td>
+<td><textarea name="content" id="comment_content" class="comment_content" ></textarea></td>
+</tr>
+
+<tr>
+<td></td>
+<td><div class="desc_div" id="desc_div">正在提交...</div></td>
+<td>
+<button type="button" name="button" id="form_button" class="form_button" onclick="comment_change_html()">发表评论</button></td>
+</tr>
+
+<input type="hidden" name="article_id" id="article_id" value="1"/>
+<input type="hidden" name="comment_form" id="comment_form" value=""/>
+<input type="hidden" name="is_show" id="is_show" value="0"/>
+<input type="hidden" name="action" id="action" value="insert"/>
+
+</form>
+</table>
+</div>
+
+
+</div>
+
+
+</div>
+
+<!-- Footer Start -->
+<div id="footer">
+<div class="bar">
+<div class="site_info">
+版权&nbsp; <a href="http://localhost/gxblog/" target="_blank"> &nbsp;胡旭博客 </a>&nbsp; 备案号
+</div>
+</div>
+</div>
+<!-- Footer Over -->
+
+<!-- 百度统计js Start -->
+<div id="baiduscript" style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1d4d6b5288d5ddd445a4b43a534065f8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- 百度统计JS Over -->
+
+
+
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shCore.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushCpp.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushCss.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushJava.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushPerl.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushPhp.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushPython.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushSql.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushVb.js'></script>
+			<script type='text/javascript' src='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/scripts/shBrushXml.js'></script>
+			<script type='text/javascript'>SyntaxHighlighter.all();</script>
+			<link type='text/css' rel='stylesheet' href='http://localhost/gxblog/gx-content/plugins/syntaxhighlighter/styles/shCoreDefault.css'/>
+		</body></html>

@@ -1,0 +1,69 @@
+<div id="comment_edit">
+<h2>编辑评论</h2></br>
+<div class="message" style="display:{$message_show}">
+{$message_show_content}
+</div>
+    <form id="form_edit_comment" name="form_edit_comment" method="post" action="./">
+
+	
+	<table class="comment_desc">
+	
+	<tr>
+	<td class="desc"><span>名称：</span></td>
+	<td class="ipt">
+	<input type="text" class="ipt" name="name" value="{$comment_name}" />
+	</td>
+	</tr>	
+	
+	<tr>
+	<td><span>QQ：</span></td>
+	<td>
+	<input type="text" class="ipt" name="qq" value="{$comment_qq}" />
+	</td>
+	</tr>	
+	
+	<tr>
+	<td><span>URL：</span></td>
+	<td>
+	<input type="text" class="ipt" name="homepage" value="{$comment_homepage}" />
+	</td>
+	</tr>
+	
+	</table>
+
+
+        <textarea name="content" id="content" class="txtarea">{$comment_content}</textarea>
+
+	  <p>
+	  	  <input onmousedown="formConfirm()" type="submit" value="更新" id="submit"  class="submit" />
+	  </p>
+	  <input type="hidden" name="action" value="comment">
+	  <input type="hidden" name="type" value="edit">
+	  <input type="hidden" name="do" value="post">
+	  <input type="hidden" name="do_array" value="{$comment_id}">
+
+	</form>
+	
+<script>
+/**
+ * 表单验证
+ */
+function formConfirm(){
+	var oTitle = document.getElementById('title');
+	var oTags = document.getElementById('tags');
+	var oContent = document.getElementById('content');
+	
+	if(oTitle.value == "" || oTitle.value == '在此键入标题'){
+		alert("标题不能为空！");
+		return false;
+	}else if(oTags.value == "" || oTags.value == '多个标签请用英文逗号分开'){
+		alert("标签不能为空！");
+		return false;
+	}else if(oContent.value == ""){
+		alert("内容不能为空！");
+		return false;
+	}
+	return ;
+}
+</script>
+</div>
